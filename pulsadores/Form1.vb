@@ -1,6 +1,8 @@
 ﻿Imports System.IO.Ports
 
 Public Class Form1
+    Dim f_go As Boolean = False
+    Public leones, osos, aguilas, tiburones As String
     Sub PlayBackgroundSoundFile()
         My.Computer.Audio.Play("C:\wtrfall.wav",
         AudioPlayMode.WaitToComplete)
@@ -15,17 +17,51 @@ Public Class Form1
             SerialPort1.PortName = "COM5"
             SerialPort1.Open()
             Timer1.Enabled = True
+            myCOlor = btnGo.BackColor
         Catch ex As Exception
 
         End Try
     End Sub
+
+
+
+    Dim cnt As Byte
     Private Sub SerialPort1_DataReceived(sender As Object, e As SerialDataReceivedEventArgs) Handles SerialPort1.DataReceived
         Try
             Dim Incoming As Byte
             Incoming = SerialPort1.ReadByte()
             'MessageBox.Show(Incoming.ToString)
-            If (Incoming = 162) Then
-                lion = 1
+            If f_go Then
+
+
+                If Incoming = 161 Then
+                    If leones = "" Then
+                        cnt += 1
+                        leones = cnt.ToString
+                    End If
+                ElseIf Incoming = 162
+                    If osos = "" Then
+                        cnt += 1
+                        osos = cnt.ToString
+                    End If
+
+                ElseIf Incoming = 163
+                    If aguilas = "" Then
+                        cnt += 1
+                        aguilas = cnt.ToString
+                    End If
+
+                ElseIf Incoming = 164
+                    If tiburones = "" Then
+                        cnt += 1
+                        tiburones = cnt.ToString
+                    End If
+
+                End If
+                If cnt = 4 Then
+                    f_go = False
+                    cnt = 0
+                End If
 
             End If
 
@@ -33,15 +69,25 @@ Public Class Form1
 
         End Try
     End Sub
-
+    Dim myCOlor As New Color
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
-            If (lion = 1) Then
-                'pic1.Visible = True
-                'Application.DoEvents()
-                'lionPlay()
-                AxWindowsMediaPlayer1.URL = "C:\lion.wmv"
-            End If
+            leones = ""
+            osos = ""
+            aguilas = ""
+            tiburones = ""
+            btnGo.BackColor = myCOlor
+            f_go = False
+            cnt = 0
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
+        Try
+            f_go = True
+            btnGo.BackColor = Color.GreenYellow
         Catch ex As Exception
 
         End Try
@@ -50,13 +96,16 @@ Public Class Form1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If (lion = 1) Then
             lion = 0
-
-            pic1.Visible = True
-            pic1.Enabled = False
             Application.DoEvents()
             lionPlay()
-            'Application.DoEvents()
-            'AxWindowsMediaPlayer1.URL = "C:\lion.gif"
         End If
+    End Sub
+
+    Private Sub btnVentanaResultados_Click(sender As Object, e As EventArgs) Handles btnVentanaResultados.Click
+        Try
+            Form2.Show()
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

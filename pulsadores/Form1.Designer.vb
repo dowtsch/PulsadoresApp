@@ -23,14 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.pic1 = New System.Windows.Forms.PictureBox()
-        Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.btnGo = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnVentanaResultados = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SerialPort1
@@ -38,59 +35,62 @@ Partial Class Form1
         Me.SerialPort1.PortName = "COM5"
         Me.SerialPort1.ReadTimeout = 1000
         '
-        'Button1
+        'btnGo
         '
-        Me.Button1.Location = New System.Drawing.Point(37, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'pic1
-        '
-        Me.pic1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pic1.Image = CType(resources.GetObject("pic1.Image"), System.Drawing.Image)
-        Me.pic1.Location = New System.Drawing.Point(0, 0)
-        Me.pic1.Name = "pic1"
-        Me.pic1.Size = New System.Drawing.Size(1068, 610)
-        Me.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.pic1.TabIndex = 1
-        Me.pic1.TabStop = False
-        Me.pic1.Visible = False
-        '
-        'AxWindowsMediaPlayer1
-        '
-        Me.AxWindowsMediaPlayer1.Enabled = True
-        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(783, 417)
-        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
-        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(126, 66)
-        Me.AxWindowsMediaPlayer1.TabIndex = 2
+        Me.btnGo.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGo.Font = New System.Drawing.Font("28 Days Later", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGo.Location = New System.Drawing.Point(12, 100)
+        Me.btnGo.Name = "btnGo"
+        Me.btnGo.Size = New System.Drawing.Size(259, 82)
+        Me.btnGo.TabIndex = 0
+        Me.btnGo.Text = "Go!"
+        Me.btnGo.UseVisualStyleBackColor = True
         '
         'Timer1
         '
+        '
+        'btnVentanaResultados
+        '
+        Me.btnVentanaResultados.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnVentanaResultados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVentanaResultados.Font = New System.Drawing.Font("28 Days Later", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVentanaResultados.Location = New System.Drawing.Point(12, 12)
+        Me.btnVentanaResultados.Name = "btnVentanaResultados"
+        Me.btnVentanaResultados.Size = New System.Drawing.Size(259, 82)
+        Me.btnVentanaResultados.TabIndex = 1
+        Me.btnVentanaResultados.Text = "Ventana resultados"
+        Me.btnVentanaResultados.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("28 Days Later", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(12, 188)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(259, 89)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Reset"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1068, 610)
-        Me.Controls.Add(Me.AxWindowsMediaPlayer1)
-        Me.Controls.Add(Me.pic1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnVentanaResultados)
+        Me.Controls.Add(Me.btnGo)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.pic1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
-    Friend WithEvents Button1 As Button
-    Friend WithEvents pic1 As PictureBox
-    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents btnGo As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnVentanaResultados As Button
+    Friend WithEvents Button1 As Button
 End Class
