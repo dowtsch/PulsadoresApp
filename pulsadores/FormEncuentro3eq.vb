@@ -25,7 +25,7 @@
             Me.txtLeones.Text = Form1.leones 'En los pulsadores de Zgz, los leones aparecen como aguilas, ya que un relé no funciona. por modificar
             'Me.txtOsos.Text = Form1.aguilas
             Me.txtTiburones.Text = Form1.tiburones
-            Me.txtOsos.Text = Form1.osos
+            Me.txtAguilas.Text = Form1.aguilas
         Catch ex As Exception
 
         End Try

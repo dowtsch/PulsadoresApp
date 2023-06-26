@@ -35,7 +35,7 @@ Partial Class FormEncuentro3eq
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtOsos = New System.Windows.Forms.TextBox()
+        Me.txtAguilas = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -47,7 +47,7 @@ Partial Class FormEncuentro3eq
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.txtLeones)
-        Me.Panel1.Location = New System.Drawing.Point(85, 94)
+        Me.Panel1.Location = New System.Drawing.Point(550, 94)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(433, 545)
         Me.Panel1.TabIndex = 0
@@ -68,7 +68,7 @@ Partial Class FormEncuentro3eq
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(425, 117)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Equipo 1:"
+        Me.Label1.Text = "Equipo 2:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtLeones
@@ -93,7 +93,7 @@ Partial Class FormEncuentro3eq
         Me.Panel4.Controls.Add(Me.TextBox2)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.txtTiburones)
-        Me.Panel4.Location = New System.Drawing.Point(524, 94)
+        Me.Panel4.Location = New System.Drawing.Point(91, 94)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(456, 545)
         Me.Panel4.TabIndex = 3
@@ -114,7 +114,7 @@ Partial Class FormEncuentro3eq
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(425, 117)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Equipo 2:"
+        Me.Label2.Text = "Equipo 1:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtTiburones
@@ -139,7 +139,7 @@ Partial Class FormEncuentro3eq
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.txtOsos)
+        Me.Panel2.Controls.Add(Me.txtAguilas)
         Me.Panel2.Location = New System.Drawing.Point(986, 94)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(456, 545)
@@ -164,19 +164,19 @@ Partial Class FormEncuentro3eq
         Me.Label3.Text = "Equipo 3:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtOsos
+        'txtAguilas
         '
-        Me.txtOsos.BackColor = System.Drawing.SystemColors.Menu
-        Me.txtOsos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtOsos.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.txtOsos.Font = New System.Drawing.Font("28 Days Later", 99.75!)
-        Me.txtOsos.Location = New System.Drawing.Point(0, 389)
-        Me.txtOsos.Name = "txtOsos"
-        Me.txtOsos.ReadOnly = True
-        Me.txtOsos.Size = New System.Drawing.Size(456, 156)
-        Me.txtOsos.TabIndex = 4
-        Me.txtOsos.Text = "1"
-        Me.txtOsos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtAguilas.BackColor = System.Drawing.SystemColors.Menu
+        Me.txtAguilas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtAguilas.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.txtAguilas.Font = New System.Drawing.Font("28 Days Later", 99.75!)
+        Me.txtAguilas.Location = New System.Drawing.Point(0, 389)
+        Me.txtAguilas.Name = "txtAguilas"
+        Me.txtAguilas.ReadOnly = True
+        Me.txtAguilas.Size = New System.Drawing.Size(456, 156)
+        Me.txtAguilas.TabIndex = 4
+        Me.txtAguilas.Text = "1"
+        Me.txtAguilas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FormEncuentro3eq
         '
@@ -210,5 +210,5 @@ Partial Class FormEncuentro3eq
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtOsos As TextBox
+    Friend WithEvents txtAguilas As TextBox
 End Class
