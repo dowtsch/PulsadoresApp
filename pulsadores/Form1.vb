@@ -98,6 +98,7 @@ Public Class Form1
         End Try
     End Sub
 
+
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
         Try
             f_go = True
@@ -106,7 +107,6 @@ Public Class Form1
 
         End Try
     End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If (lion = 1) Then
             lion = 0
@@ -118,6 +118,30 @@ Public Class Form1
     Private Sub btnVentanaResultados_Click(sender As Object, e As EventArgs) Handles btnVentanaResultados.Click
         Try
             Form2.Show()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            FormZgz.Show()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            FormEncuentro2eq.Show()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Try
+            FormEncuentro3eq.Show()
         Catch ex As Exception
 
         End Try

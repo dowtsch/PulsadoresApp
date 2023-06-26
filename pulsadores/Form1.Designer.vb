@@ -30,6 +30,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SerialPort1
@@ -44,7 +45,7 @@ Partial Class Form1
         Me.btnGo.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGo.Location = New System.Drawing.Point(12, 137)
         Me.btnGo.Name = "btnGo"
-        Me.btnGo.Size = New System.Drawing.Size(789, 82)
+        Me.btnGo.Size = New System.Drawing.Size(1054, 82)
         Me.btnGo.TabIndex = 0
         Me.btnGo.Text = "Go!"
         Me.btnGo.UseVisualStyleBackColor = True
@@ -71,7 +72,7 @@ Partial Class Form1
         Me.Button1.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(12, 226)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(789, 89)
+        Me.Button1.Size = New System.Drawing.Size(1054, 89)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Reset"
         Me.Button1.UseVisualStyleBackColor = True
@@ -100,11 +101,24 @@ Partial Class Form1
         Me.Button3.Text = "Ventana resultados ENCUENTRO JÓVENES (2 EQUIPOS)"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(807, 12)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(259, 118)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "Ventana resultados ENCUENTRO JÓVENES (3 EQUIPOS)"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(819, 343)
+        Me.ClientSize = New System.Drawing.Size(1087, 343)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -123,4 +137,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class
