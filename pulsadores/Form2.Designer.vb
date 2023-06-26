@@ -64,11 +64,11 @@ Partial Class Form2
         Me.txtLeones.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.txtLeones.Font = New System.Drawing.Font("28 Days Later", 99.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLeones.ForeColor = System.Drawing.Color.Black
-        Me.txtLeones.Location = New System.Drawing.Point(0, 382)
+        Me.txtLeones.Location = New System.Drawing.Point(0, 390)
         Me.txtLeones.Multiline = True
         Me.txtLeones.Name = "txtLeones"
         Me.txtLeones.ReadOnly = True
-        Me.txtLeones.Size = New System.Drawing.Size(325, 163)
+        Me.txtLeones.Size = New System.Drawing.Size(325, 155)
         Me.txtLeones.TabIndex = 3
         Me.txtLeones.Text = "1"
         Me.txtLeones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center

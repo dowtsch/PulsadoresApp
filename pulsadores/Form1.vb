@@ -36,25 +36,37 @@ Public Class Form1
                     If tiburones = "" Then
                         cnt += 1
                         tiburones = cnt.ToString
-                        SerialPort1.Write({&H62}, 0, 1)
+                        If (flag_ganador = False) Then
+                            SerialPort1.Write({&H62}, 0, 1)
+                            flag_ganador = True
+                        End If
                     End If
                 ElseIf Incoming = 162
                     If leones = "" Then
                         cnt += 1
                         leones = cnt.ToString
-                        SerialPort1.Write({&H52}, 0, 1)
+                        If (flag_ganador = False) Then
+                            SerialPort1.Write({&H52}, 0, 1)
+                            flag_ganador = True
+                        End If
                     End If
                 ElseIf Incoming = 163
                     If aguilas = "" Then
                         cnt += 1
                         aguilas = cnt.ToString
-                        SerialPort1.Write({&H82}, 0, 1)
+                        If (flag_ganador = False) Then
+                            SerialPort1.Write({&H82}, 0, 1)
+                            flag_ganador = True
+                        End If
                     End If
                 ElseIf Incoming = 164
                     If osos = "" Then
                         cnt += 1
                         osos = cnt.ToString
-                        SerialPort1.Write({&H72}, 0, 1)
+                        If (flag_ganador = False) Then
+                            SerialPort1.Write({&H72}, 0, 1)
+                            flag_ganador = True
+                        End If
                     End If
                 End If
                 If cnt = 4 Then
@@ -69,6 +81,7 @@ Public Class Form1
         End Try
     End Sub
     Dim myCOlor As New Color
+    Dim flag_ganador As Boolean = False
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             leones = ""
@@ -79,6 +92,7 @@ Public Class Form1
             f_go = False
             SerialPort1.Write({&H51, &H61, &H71, &H81}, 0, 4)
             cnt = 0
+            flag_ganador = False
         Catch ex As Exception
 
         End Try

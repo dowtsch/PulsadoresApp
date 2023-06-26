@@ -1,7 +1,7 @@
-﻿Public Class Form2
+﻿Public Class Form3
 
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles Me.Load
         txtTiburones.Text = ""
         txtLeones.Text = ""
         txtAguilas.Text = ""
