@@ -2,10 +2,10 @@
 
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
-        txtAguilas.Text = ""
-        txtLeones.Text = ""
-        txtOsos.Text = ""
         txtTiburones.Text = ""
+        txtLeones.Text = ""
+        txtAguilas.Text = ""
+        txtOsos.Text = ""
         Timer1.Enabled = True
         Timer1.Start()
 
@@ -23,9 +23,9 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
             Me.txtLeones.Text = Form1.leones
-            Me.txtOsos.Text = Form1.osos
-            Me.txtAguilas.Text = Form1.aguilas
-            Me.txtTiburones.Text = Form1.tiburones
+            Me.txtAguilas.Text = Form1.osos
+            Me.txtTiburones.Text = Form1.aguilas
+            Me.txtOsos.Text = Form1.tiburones
         Catch ex As Exception
 
         End Try

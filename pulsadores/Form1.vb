@@ -32,31 +32,30 @@ Public Class Form1
             Incoming = SerialPort1.ReadByte()
             'MessageBox.Show(Incoming.ToString)
             If f_go Then
-
-
                 If Incoming = 161 Then
+                    If tiburones = "" Then
+                        cnt += 1
+                        tiburones = cnt.ToString
+                        SerialPort1.Write({&H62}, 0, 1)
+                    End If
+                ElseIf Incoming = 162
                     If leones = "" Then
                         cnt += 1
                         leones = cnt.ToString
+                        SerialPort1.Write({&H52}, 0, 1)
                     End If
-                ElseIf Incoming = 162
-                    If osos = "" Then
-                        cnt += 1
-                        osos = cnt.ToString
-                    End If
-
                 ElseIf Incoming = 163
                     If aguilas = "" Then
                         cnt += 1
                         aguilas = cnt.ToString
+                        SerialPort1.Write({&H82}, 0, 1)
                     End If
-
                 ElseIf Incoming = 164
-                    If tiburones = "" Then
+                    If osos = "" Then
                         cnt += 1
-                        tiburones = cnt.ToString
+                        osos = cnt.ToString
+                        SerialPort1.Write({&H72}, 0, 1)
                     End If
-
                 End If
                 If cnt = 4 Then
                     f_go = False
@@ -78,6 +77,7 @@ Public Class Form1
             tiburones = ""
             btnGo.BackColor = myCOlor
             f_go = False
+            SerialPort1.Write({&H51, &H61, &H71, &H81}, 0, 4)
             cnt = 0
         Catch ex As Exception
 

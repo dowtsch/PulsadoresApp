@@ -28,13 +28,13 @@ Partial Class Form2
         Me.txtLeones = New System.Windows.Forms.TextBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.txtOsos = New System.Windows.Forms.TextBox()
+        Me.txtAguilas = New System.Windows.Forms.TextBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.txtAguilas = New System.Windows.Forms.TextBox()
+        Me.txtTiburones = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.txtTiburones = New System.Windows.Forms.TextBox()
+        Me.txtOsos = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
@@ -52,9 +52,9 @@ Partial Class Form2
         Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel1.Controls.Add(Me.txtLeones)
         Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Location = New System.Drawing.Point(0, 1)
+        Me.Panel1.Location = New System.Drawing.Point(0, 41)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(325, 558)
+        Me.Panel1.Size = New System.Drawing.Size(325, 545)
         Me.Panel1.TabIndex = 0
         '
         'txtLeones
@@ -64,7 +64,7 @@ Partial Class Form2
         Me.txtLeones.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.txtLeones.Font = New System.Drawing.Font("28 Days Later", 99.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLeones.ForeColor = System.Drawing.Color.Black
-        Me.txtLeones.Location = New System.Drawing.Point(0, 395)
+        Me.txtLeones.Location = New System.Drawing.Point(0, 382)
         Me.txtLeones.Multiline = True
         Me.txtLeones.Name = "txtLeones"
         Me.txtLeones.ReadOnly = True
@@ -80,33 +80,33 @@ Partial Class Form2
         Me.PictureBox4.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(325, 388)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 1
         Me.PictureBox4.TabStop = False
         '
         'Panel2
         '
         Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel2.Controls.Add(Me.txtOsos)
+        Me.Panel2.Controls.Add(Me.txtAguilas)
         Me.Panel2.Controls.Add(Me.PictureBox3)
-        Me.Panel2.Location = New System.Drawing.Point(322, 0)
+        Me.Panel2.Location = New System.Drawing.Point(325, 41)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(325, 559)
+        Me.Panel2.Size = New System.Drawing.Size(325, 546)
         Me.Panel2.TabIndex = 1
         '
-        'txtOsos
+        'txtAguilas
         '
-        Me.txtOsos.BackColor = System.Drawing.SystemColors.Menu
-        Me.txtOsos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtOsos.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.txtOsos.Font = New System.Drawing.Font("28 Days Later", 99.75!)
-        Me.txtOsos.Location = New System.Drawing.Point(0, 403)
-        Me.txtOsos.Name = "txtOsos"
-        Me.txtOsos.ReadOnly = True
-        Me.txtOsos.Size = New System.Drawing.Size(325, 156)
-        Me.txtOsos.TabIndex = 4
-        Me.txtOsos.Text = "1"
-        Me.txtOsos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtAguilas.BackColor = System.Drawing.SystemColors.Menu
+        Me.txtAguilas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtAguilas.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.txtAguilas.Font = New System.Drawing.Font("28 Days Later", 99.75!)
+        Me.txtAguilas.Location = New System.Drawing.Point(0, 390)
+        Me.txtAguilas.Name = "txtAguilas"
+        Me.txtAguilas.ReadOnly = True
+        Me.txtAguilas.Size = New System.Drawing.Size(325, 156)
+        Me.txtAguilas.TabIndex = 4
+        Me.txtAguilas.Text = "1"
+        Me.txtAguilas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox3
         '
@@ -122,26 +122,26 @@ Partial Class Form2
         'Panel4
         '
         Me.Panel4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel4.Controls.Add(Me.txtAguilas)
+        Me.Panel4.Controls.Add(Me.txtTiburones)
         Me.Panel4.Controls.Add(Me.PictureBox1)
-        Me.Panel4.Location = New System.Drawing.Point(975, 1)
+        Me.Panel4.Location = New System.Drawing.Point(975, 41)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(325, 558)
+        Me.Panel4.Size = New System.Drawing.Size(325, 545)
         Me.Panel4.TabIndex = 3
         '
-        'txtAguilas
+        'txtTiburones
         '
-        Me.txtAguilas.BackColor = System.Drawing.SystemColors.Menu
-        Me.txtAguilas.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtAguilas.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.txtAguilas.Font = New System.Drawing.Font("28 Days Later", 99.75!)
-        Me.txtAguilas.Location = New System.Drawing.Point(0, 402)
-        Me.txtAguilas.Name = "txtAguilas"
-        Me.txtAguilas.ReadOnly = True
-        Me.txtAguilas.Size = New System.Drawing.Size(325, 156)
-        Me.txtAguilas.TabIndex = 4
-        Me.txtAguilas.Text = "1"
-        Me.txtAguilas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtTiburones.BackColor = System.Drawing.SystemColors.Menu
+        Me.txtTiburones.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtTiburones.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.txtTiburones.Font = New System.Drawing.Font("28 Days Later", 99.75!)
+        Me.txtTiburones.Location = New System.Drawing.Point(0, 389)
+        Me.txtTiburones.Name = "txtTiburones"
+        Me.txtTiburones.ReadOnly = True
+        Me.txtTiburones.Size = New System.Drawing.Size(325, 156)
+        Me.txtTiburones.TabIndex = 4
+        Me.txtTiburones.Text = "1"
+        Me.txtTiburones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox1
         '
@@ -157,26 +157,26 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel3.Controls.Add(Me.txtTiburones)
+        Me.Panel3.Controls.Add(Me.txtOsos)
         Me.Panel3.Controls.Add(Me.PictureBox2)
-        Me.Panel3.Location = New System.Drawing.Point(647, 0)
+        Me.Panel3.Location = New System.Drawing.Point(650, 41)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(325, 558)
+        Me.Panel3.Size = New System.Drawing.Size(325, 545)
         Me.Panel3.TabIndex = 4
         '
-        'txtTiburones
+        'txtOsos
         '
-        Me.txtTiburones.BackColor = System.Drawing.SystemColors.Menu
-        Me.txtTiburones.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtTiburones.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.txtTiburones.Font = New System.Drawing.Font("28 Days Later", 99.75!)
-        Me.txtTiburones.Location = New System.Drawing.Point(0, 402)
-        Me.txtTiburones.Name = "txtTiburones"
-        Me.txtTiburones.ReadOnly = True
-        Me.txtTiburones.Size = New System.Drawing.Size(325, 156)
-        Me.txtTiburones.TabIndex = 4
-        Me.txtTiburones.Text = "1"
-        Me.txtTiburones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtOsos.BackColor = System.Drawing.SystemColors.Menu
+        Me.txtOsos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOsos.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.txtOsos.Font = New System.Drawing.Font("28 Days Later", 99.75!)
+        Me.txtOsos.Location = New System.Drawing.Point(0, 389)
+        Me.txtOsos.Name = "txtOsos"
+        Me.txtOsos.ReadOnly = True
+        Me.txtOsos.Size = New System.Drawing.Size(325, 156)
+        Me.txtOsos.TabIndex = 4
+        Me.txtOsos.Text = "1"
+        Me.txtOsos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox2
         '
@@ -196,7 +196,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1433, 561)
+        Me.ClientSize = New System.Drawing.Size(1433, 617)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel2)
@@ -228,8 +228,8 @@ Partial Class Form2
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents txtLeones As TextBox
-    Friend WithEvents txtOsos As TextBox
     Friend WithEvents txtAguilas As TextBox
     Friend WithEvents txtTiburones As TextBox
+    Friend WithEvents txtOsos As TextBox
     Friend WithEvents Timer1 As Timer
 End Class
